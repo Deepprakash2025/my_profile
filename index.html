@@ -1,75 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Prakash | Profile</title>
+  <meta name="description" content="My profile" />
+  <link rel="icon" href="image.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<html lang=en>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
 
-    <head>
-        <meta charset=utf-8>
-        <meta name=viewport content="width=device-width,initial-scale=1">
-        <title>Deep Prakash | Profile.</title>
-        <meta name=description content="my profile">
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="icon" href="image.png"/>
-        <script>alert("If you are a developer then access it.");</script>
-        
-    </head>
+    .image {
+      width: 40%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin: 20px auto;
+    }
 
-    <body class="background">
-        
-<!------------------------ 1st section ------------------------------------->
-             
-            <div>   
-            <img class="image" alt="Contact to Deep Prakash" src="image.png">
-            </div>
-             
-        
-         <section>
-             
-            <div class="Heading">  
-            <h2 ><strong>Deep</strong> Prakash</h2>
-            </div>
-                
-                
-            <div class="bio">
-            <h3>I am a <strong>Student</strong> with dedication <br> to become a professional developer.</h3>
-             </div>
-                
-                
-            <div  class="link"><p><a  href="https://gmail.com/" target="_blank">disposalemail@gmail.com</a></p></div>
-            
-              
-            </section>    
-                
-            
-        
-            <br><br><br><br><br><br><br><br><br><br><br>
-        
-        
-        
-        <!-- 2nd section -->
-       
-          
-         <h1>Hi! Welcome to <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a></h1>
-         <p>Hello dear thanks for reaching out here,</p>
-        
-         <p>My self <strong>Deep Prakash</strong> I am a class 10th student.</p>
-        
-          <p><strong class="developer">For developers</strong></p>
-         <p>Help me to optmize the first section of this site for mobile and tablet.</p>
+    .Heading h2 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
 
-        <p><strong class="head">Contact Us</strong></p>
-         <p>Email_id : <a href="https://gmail.com" target="_blank">disposalemail@gmail.com</a></p>
-         <p>Mobile_No : <a href="#">9876XXXXXX</a></p>
-        
-        <footer>
-    
-     Copyright © <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a>
-    
-</footer>    
-          
-    
-        
-                
-    </body>
+    .bio h3 {
+      font-size: 1.1rem;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    .link a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    .head {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .developer {
+      color: #e91e63;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 600px) {
+      .Heading h2 {
+        font-size: 2.5rem;
+      }
+
+      .bio h3 {
+        font-size: 1.3rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .image {
+        width: 25%;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .image {
+        width: 180px;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 👨‍💻 Dev Message -->
+  <noscript>Enable JavaScript for best experience</noscript>
+  <div style="font-size: 0.9rem; color: #888;">🔒 If you're a dev, feel free to inspect or contribute ideas</div>
+
+  <!-- 1st Section -->
+  <div>
+    <img class="image" alt="Contact to Deep Prakash" src="image.png">
+  </div>
+
+  <section>
+    <div class="Heading">
+      <h2><strong>Deep</strong> Prakash</h2>
+    </div>
+
+    <div class="bio">
+      <h3>I am a <strong>student</strong> dedicated to becoming a professional developer.</h3>
+    </div>
+
+    <div class="link">
+      <p><a href="mailto:disposalemail@gmail.com">disposalemail@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- 2nd Section -->
+  <h1>Hi! Welcome to <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a></h1>
+  <p>Hello dear, thanks for reaching out here.</p>
+  <p>Myself <strong>Deep Prakash</strong>, I am a class 10th student.</p>
+  <p><strong class="developer">For developers</strong></p>
+  <p>Help me to optimize this site further and add cool features!</p>
+
+  <p><strong class="head">Contact Us</strong></p>
+  <p>Email: <a href="mailto:disposalemail@gmail.com">disposalemail@gmail.com</a></p>
+  <p>Mobile No: <a href="#">9876XXXXXX</a></p>
+
+  <footer>
+    Copyright © <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a>
+  </footer>
+</body>
 
 </html>
