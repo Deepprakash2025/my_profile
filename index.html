@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deep Prakash | Profile</title>
-  <meta name="description" content="My profile" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deep Prakash | Personal Site</title>
+  <meta name="description" content="Deep Prakash's personal webpage" />
   <link rel="icon" href="image.png" />
+
+  <!-- Google Font for better looks -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg-color: #f5f5f5;
+      --text-color: #222;
+      --accent: #007bff;
+    }
+
+    body.dark {
+      --bg-color: #111;
+      --text-color: #ddd;
+      --accent: #00bfff;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -15,138 +30,132 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Fira Code', monospace;
       text-align: center;
-      padding: 20px;
+      padding: 2rem;
+      transition: background 0.4s ease, color 0.4s ease;
     }
 
     .image {
       width: 40%;
-      max-width: 200px;
+      max-width: 180px;
       height: auto;
       border-radius: 50%;
-      margin: 20px auto;
-    }
-
-    .Heading h2 {
-      font-size: 2rem;
-      margin: 10px 0;
-    }
-
-    .bio h3 {
-      font-size: 1.1rem;
-      margin: 15px 0;
-      line-height: 1.5;
-    }
-
-    .link a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    section {
-      margin-bottom: 40px;
+      margin: 1rem auto;
     }
 
     h1 {
-      font-size: 1.5rem;
-      margin-top: 30px;
+      font-size: 2rem;
+      margin: 1rem 0;
     }
 
-    .head {
-      color: #007bff;
-      font-weight: bold;
+    h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .typing {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      min-height: 30px;
+    }
+
+    a {
+      color: var(--accent);
       text-decoration: none;
     }
 
-    .developer {
-      color: #e91e63;
-    }
-
-    p {
-      margin: 10px 0;
-      font-size: 1rem;
+    .btn-toggle {
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: inherit;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      color: #555;
     }
 
-    /* Responsive Design */
     @media (min-width: 600px) {
-      .Heading h2 {
-        font-size: 2.5rem;
-      }
-
-      .bio h3 {
-        font-size: 1.3rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .image {
-        width: 25%;
-      }
-    }
-
-    @media (min-width: 900px) {
-      .image {
-        width: 180px;
-      }
-
-      p {
-        font-size: 1.1rem;
-      }
+      h1 { font-size: 2.4rem; }
+      .typing { font-size: 1.4rem; }
     }
   </style>
 </head>
 
 <body>
-  <!-- 👨‍💻 Dev Message -->
-  <noscript>Enable JavaScript for best experience</noscript>
-  <div style="font-size: 0.9rem; color: #888;">🔒 If you're a dev, feel free to inspect or contribute ideas</div>
+  <!-- Dark Mode Toggle -->
+  <button class="btn-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-  <!-- 1st Section -->
-  <div>
-    <img class="image" alt="Contact to Deep Prakash" src="image.png">
-  </div>
+  <!-- Profile Picture -->
+  <img class="image" src="image.png" alt="Deep Prakash">
 
-  <section>
-    <div class="Heading">
-      <h2><strong>Deep</strong> Prakash</h2>
-    </div>
+  <!-- Name -->
+  <h1><strong>Deep</strong> Prakash</h1>
 
-    <div class="bio">
-      <h3>I am a <strong>student</strong> dedicated to becoming a professional developer.</h3>
-    </div>
+  <!-- Typing Animation -->
+  <div class="typing" id="typing-text"></div>
 
-    <div class="link">
-      <p><a href="mailto:disposalemail@gmail.com">disposalemail@gmail.com</a></p>
-    </div>
-  </section>
+  <!-- Updated Bio -->
+  <h2>I’ve completed Class 10 and now I'm diving deeper into programming, design, and web development.  
+    Learning, building, and exploring every day 💻 🚀</h2>
 
-  <!-- 2nd Section -->
-  <h1>Hi! Welcome to <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a></h1>
-  <p>Hello dear, thanks for reaching out here.</p>
-  <p>Myself <strong>Deep Prakash</strong>, I am a class 10th student.</p>
-  <p><strong class="developer">For developers</strong></p>
-  <p>Help me to optimize this site further and add cool features!</p>
-
-  <p><strong class="head">Contact Us</strong></p>
-  <p>Email: <a href="mailto:disposalemail@gmail.com">disposalemail@gmail.com</a></p>
-  <p>Mobile No: <a href="#">9876XXXXXX</a></p>
+  <!-- Optional External Link -->
+  <p>Explore my experimental zone: <a href="https://freelearner.cf/" target="_blank">FreeLearner.cf</a></p>
 
   <footer>
-    Copyright © <a class="head" href="https://freelearner.cf/" target="_blank">Index_Profile.in</a>
+    Made with ❤️ by Deep Prakash <br>
+    Copyright © <a href="https://freelearner.cf/" target="_blank">Index_Profile.in</a>
   </footer>
-</body>
 
+  <!-- JavaScript: Dark Mode & Typing Animation -->
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
+    // Typing Animation
+    const textArray = [
+      "I am a self-taught developer.",
+      "I love building websites.",
+      "Currently exploring JavaScript and UI/UX.",
+      "Welcome to my digital space!"
+    ];
+    let index = 0, charIndex = 0, currentText = "", isDeleting = false;
+
+    function type() {
+      const typingText = document.getElementById("typing-text");
+
+      if (index >= textArray.length) index = 0;
+      currentText = textArray[index];
+
+      if (isDeleting) {
+        typingText.textContent = currentText.substring(0, charIndex--);
+      } else {
+        typingText.textContent = currentText.substring(0, charIndex++);
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(type, 1000); // Pause before deleting
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index++;
+        setTimeout(type, 300);
+      } else {
+        setTimeout(type, isDeleting ? 40 : 100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+</body>
 </html>
